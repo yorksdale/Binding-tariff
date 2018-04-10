@@ -1,0 +1,15 @@
+{
+  "name": "Binding-tariff",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
