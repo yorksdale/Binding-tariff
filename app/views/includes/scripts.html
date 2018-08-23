@@ -8,4 +8,14 @@
 
 {% if useAutoStoreData %}
   <script src="/public/javascripts/auto-store-data.js"></script>
+
+<script>
+
+       function change_link(loc){
+
+         $(‘form.form’).attr(‘action’, loc);;
+
+       }
+
+     </script>
 {% endif %}

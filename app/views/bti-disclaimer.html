@@ -1,0 +1,113 @@
+<!doctype html>
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<style>
+		.organisation-logo-medium, .organisation-logo-stacked-medium {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 3px 0 2px 38px;
+    background-image: url(../images/icons/crests/hmrc_crest_18px.png);
+    background-position: 6px center;
+    border-left: 2px solid #009390;
+    white-space: nowrap;
+			
+}
+		.logo.margintop {margin-top:20px;}
+.alpha-banner p {
+	margin-bottom: 0.5em;
+    padding: 10px 0 8px 0;
+	border-bottom: 1px solid #bfc1c3;}
+.multiple-choice input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;!
+}
+	</style>
+	
+ 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+		<div class="alpha-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a trial service. Help us improve it - send your
+      <a href="">feedback</a>.</span>
+    </p>
+  </div>
+ <div class="logo margintop">
+        <span class="organisation-logo organisation-logo-medium"> HM Revenue &amp; Customs </span>
+    </div>
+		<a href="[URL OF PREVIOUS PAGE]" class="link-back">Back</a> 
+      <h1 class="heading-xlarge">
+        Binding Tariff Information Service
+        <span class="heading-secondary"></span>
+      </h1>{{releaseVersion | log }}
+		
+	<div class="form-group">
+		<div class="field-group">
+			
+       <fieldset>
+
+            <legend>
+      <h1 class="heading-medium">
+        Do you have authorisation to apply on their behalf?
+
+
+      </h1>
+    </legend>
+           <div class=“multiple-choice”>
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes" onChange=“change_link(‘bti-Agent’);“>
+             <label for="radio-inline-1">Yes</label>
+           </div>
+
+           <div class=“multiple-choice”>
+             <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No" onChange=“change_link(‘bti-eori’);“>
+             <label for="radio-inline-2">No</label>
+           </div>
+
+       </fieldset>
+		</div>
+																	  
+ 
+			<h2 class="heading-medium">
+        Declaration
+
+      </h2>
+		  <p class="govuk-body">By continuing you confirm that:</p>
+
+        <ul class="list list-bullet">
+          <li>You have permision to apply for a BTI on their behalf</li>
+          <li>You will provide accurate information</li>
+        </ul>
+			<div class="form-group">
+  <div class="multiple-choice">
+    <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">
+    <label for="checkbox-telephone-number">I agree</label>
+  </div>
+</div>
+
+    <button class="button" type="submit">Save and continue</button>
+	  </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

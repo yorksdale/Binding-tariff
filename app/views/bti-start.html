@@ -1,0 +1,93 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<style>
+		.organisation-logo-medium, .organisation-logo-stacked-medium {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 3px 0 2px 38px;
+    background-image: url(../images/icons/crests/hmrc_crest_18px.png);
+    background-position: 6px center;
+    border-left: 2px solid #009390;
+    white-space: nowrap;
+			
+}
+		.logo.margintop {margin-top:20px;}
+	</style>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+ <div class="logo margintop">
+        <span class="organisation-logo organisation-logo-medium"> HM Revenue &amp; Customs </span>
+    </div>
+      <h1 class="heading-xlarge">
+        Binding Tariff Information Service
+        <span class="heading-secondary"></span>
+      </h1>{{releaseVersion | log }}
+      <p>It is not legally required for your commodities to have a Binding Tariff to import and export goods. You can find a code for your commoditites using the trade tariff <a href="">step by step guidance</a> and the <a href="https://www.trade-tariff.service.gov.uk/trade-tariff/sectionsTrade"> Tariff lookup service</a>. If you are not confident you have found the correct code you can contact the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/tariff-classification-service">Tariff Classification Service</a>.</p>
+
+
+     
+
+		 <p class="govuk-body">Use this service to:</p>
+
+        <ul class="list list-bullet">
+          <li>do something</li>
+          <li>update your name, address or other details</li>
+          <li>do something else</li>
+        </ul>
+
+        <p class="govuk-body">The application will take about 15 minutes</p>
+
+        
+          <a class="button button-start" href="#" role="button">Start now
+        </a>
+
+			<h2 class="heading-medium">Before you start</h2>
+		<p>Before you apply for a BTI decision you may want to try finding the commodity code yourself using the following guidance and tools</p>
+
+			<ul class="list list-bullet">
+				<li><a href="">Step by step guidance</a></li>
+				<li><a href="https://www.trade-tariff.service.gov.uk/trade-tariff/sectionsTrade"> Tariff lookup service</a></li>
+				<li><a href="http://ec.europa.eu/taxation_customs/dds2/ebti/ebti_home.jsp?Lang=en">eBTI</a> the EU database of existing eBTI rulings </li>
+				<li>Advice from the <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/tariff-classification-service">Tariff Classification Service</a></li>
+			</ul>
+
+      <!--<h2 class="heading-medium">Other resources</h2>-->
+		<p>To apply for a BTI you will need: </p>
+
+			<ul class="list list-bullet">
+				<li>
+					<a href="https://www.gov.uk/log-in-register-hmrc-online-services">
+						A Government Gateway Account and registered for this service
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/eori">
+						Economic Operator Registration and Identification (EORI)number
+					</a>
+				</li>
+				
+				<li>
+					
+						Product details and supporting evidence
+					
+				</li>
+				<li>
+					If you are an agent you will need a letter of representation fom your client
+				</li>
+			</ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
