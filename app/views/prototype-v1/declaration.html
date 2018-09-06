@@ -1,0 +1,110 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block page_title %}
+ Full export declaration
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+   <div class="phase-banner">
+     <p>
+       <strong class="phase-tag">ALPHA</strong>
+       <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+     </p>
+   </div>
+
+ <div class="grid-row">
+   <div class="column-two-thirds">
+
+ <form class="form" name="establishedin">
+
+     <a class="link-back back-to-previous" href=../’#’onclick="goBack()">Back<span class="visuallyhidden"> to the previous question</span></a>
+
+     <div class="field-group">
+       <fieldset>
+
+           <legend class="heading-large" role="heading" aria level="1">
+           <span class="heading-secondary">Item 1</span>
+           Consignor address and EORI number
+           </legend>
+
+               <address>Scanda Pottery Supplies<br>
+               Unit 20 Scanda Road Industrial Estate<br>
+               Scanda Road<br>
+               Manchester<br>
+               MA1 3QD<br>
+               United Kingdom</address>
+               <br>
+               GB123456789
+
+
+       </fieldset>
+     </div>
+
+     <div class="field-group">
+       <fieldset>
+
+           <legend class="heading-small" role="heading" aria level="1">
+           <span class="heading-secondary">Are these correct?</span>
+           </legend>
+
+           <div class="multiple-choice">
+             <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes" onChange="change_link(‘bti-Agent’);">
+             <label for="example-contact-by-email">Yes</label>
+           </div>
+
+           <div class="multiple-choice">
+             <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No" onChange="change_link(‘bti-other-eori’);" >
+             <label for="example-contact-by-phone">No</label>
+           </div>
+
+
+    <!--   <div class="multiple-choice" data-target="contact-by-text">
+             <input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
+             <label for="example-contact-by-text">Text message</label>
+           </div>
+           <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+             <label class="form-label" for="contact-text-message">Mobile phone number</label>
+             <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+           </div> -->
+
+       </fieldset>
+     </div>
+
+     <br>
+     <div class="form-group">
+       <button class="button">Save and continue</button>
+     </div>
+
+      <a href="../summary-items">Save and come back later</a>
+
+      <br>
+      <br>
+      <br>
+
+      <a href="#">Change your address permanently</a>
+
+  <!--     <br>
+       <div class="auto-save-text">
+         Auto saved at: <span id="time" class="auto-save-text"></span>
+       </div> -->
+
+   </form>
+
+   </div>
+
+
+
+</div>
+
+</main>
+
+{% endblock %}
+
+
+{% block custom_scripts %}
+
+{% endblock %}

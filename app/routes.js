@@ -5,6 +5,7 @@ var router = express.Router()
 router.get('/', function (req, res) {
   res.render('index')
 })
+require('./routes/prototype-v1.js')(router);
 
 // add your routes here
 

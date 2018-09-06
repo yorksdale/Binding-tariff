@@ -48,6 +48,7 @@
       </h1>{{releaseVersion | log }}
 		
 		<p>Enter your Government Gateway credentials to sign in. You received these when you created your HMRC online account.</p>
+		<form method="post">
 		<div class="form-group">
   <label class="form-label" for="first-name-2">User ID</label>
   <input class="form-control" id="first-name-2" name="first-name-2" type="text">
@@ -59,6 +60,7 @@
     <button class="button" type="submit">Sign in</button>
 		<h2 class="heading-medium">Problems signing in</h2>
 		<ul class="list">
+			</form>
         <li><a id="verify-user" href="https://www.tax.service.gov.uk/ida/sa/login" target="_self" data-sso="false">Trying to file Self Assessment using GOV.UK Verify?</a></li>
         <li><a id="registration" href="/government-gateway-registration-frontend/route?continue=%2Faccount&amp;origin=unknown" target="_self" data-sso="false" data-journey-click="sos_gg_login:gg_login_end:exit_create_new_gg_account">Don’t have a Government Gateway account</a></li>
         <li><a id="forgotten-user-id" href="/government-gateway-lost-credentials-frontend/choose-your-account?continue=%2Faccount&amp;origin=unknown&amp;forgottenOption=userId" target="_self" data-sso="false" data-journey-click="sos_gg_login:gg_login_end:forgotten_user_id">Forgotten user ID</a></li>

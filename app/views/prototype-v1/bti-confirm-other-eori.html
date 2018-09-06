@@ -26,7 +26,7 @@
 		.govuk-panel {
     padding: 25px;
 			text-align: center;
-			min-height:260px;
+			min-height:180px;
 			height:auto;
 }
 		
@@ -45,6 +45,9 @@
 			width:100%;
 			float:left;
 			
+		}
+		.govuk-panel {
+			margin-bottom:30px
 		}
 		
 		table td{border-bottom:0px;padding:0.2em;}		
@@ -78,13 +81,22 @@ td {
  <div class="logo margintop">
         <span class="organisation-logo organisation-logo-medium"> HM Revenue &amp; Customs </span>
     </div>
-      <h1 class="heading-xlarge">
+		<a href="../[URL OF PREVIOUS PAGE]" class="link-back">Back</a> 
+     <!-- <h1 class="heading-xlarge">
         Binding Tariff Information Service
         <span class="heading-secondary"></span>
-      </h1>{{releaseVersion | log }}
-		<h2 class="heading-medium">This EORI is associated to the 
-Government Gateway Account</h2>
-		<div class="govuk-panel govuk-panel--confirmation">
+      </h1>{{releaseVersion | log }}-->
+	
+	<form method="post">		
+		<div class="form-group">
+  <fieldset>
+
+    <legend>
+      <h1 class="heading-large">
+      Are you applying on behalf of this business?
+      </h1>
+    </legend>
+<div class="govuk-panel govuk-panel--confirmation">
           <h2 class="govuk-panel__title">
             GB6723190
           </h2>
@@ -92,55 +104,41 @@ Government Gateway Account</h2>
 			  <table>
  
   <tr>
-    <td>Contact name</td>
-    <td>John Smith</td>
+    <td>Company name</td>
+    <td>Cheap Dresses Ltd</td>
 	  
   </tr>
   <tr>
     <td>Registered Address</td>
-    <td>Comcode Ltd
-<br>21 High Street <br>Hull
-HL2 3SE</td>
+    <td>Cheap Dresses Ltd 
+<br>1 Low Street <br>Hull
+HL2 2DD</td>
 	 
   </tr>
-	<tr>
-    <td>Contact Email</td>
-    <td>j.smith@comcode.com</td>
 	 
-  </tr>
-	<tr>
-    <td>Contact Telephone No</td>
-    <td>0000 132 132 132</td>
-	 
-  </tr>
+  
 </table>
            
         </div>
-</div>	
-		<div class="form-group">
-  <fieldset>
-
-    <legend>
-      <h1 class="heading-medium">
-        Is the name on the EORI the person to be contacted for this application?
-      </h1>
-    </legend>
-
+</div>
     <div class="multiple-choice">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+      <input id="radio-inline-1" type="radio" name="radioconfirmeori" value="Yes">
       <label for="radio-inline-1">Yes</label>
     </div>
     <div class="multiple-choice">
-      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+      <input id="radio-inline-2" type="radio" name="radioconfirmeori" value="No">
       <label for="radio-inline-2">No</label>
     </div>
 
   </fieldset>
 </div>
-    <button class="button" type="submit">Save and continue</button>
+    <div class="form-group">
+	<button class="button" type="submit">Save and continue</button>
+	  </div>
+		<a href="../summary-items">Save and come back later</a>
 	  </div>
     </div>
-  
+	  </form>
 </main>
 
 {% endblock %}

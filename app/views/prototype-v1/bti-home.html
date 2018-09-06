@@ -21,59 +21,48 @@
 			
 }
 		.logo.margintop {margin-top:20px;}
-.alpha-banner p {
+		.alpha-banner p {
 	margin-bottom: 0.5em;
     padding: 10px 0 8px 0;
 	border-bottom: 1px solid #bfc1c3;}
-		
 	</style>
-	
- 
+
+
   <div class="grid-row">
     <div class="column-two-thirds">
-		<div class="alpha-banner">
+<div class="alpha-banner">
     <p>
       <strong class="phase-tag">ALPHA</strong>
       <span>This is a trial service. Help us improve it - send your
       <a href="">feedback</a>.</span>
     </p>
   </div>
- <div class="logo margintop">
+    <div class="logo margintop">
         <span class="organisation-logo organisation-logo-medium"> HM Revenue &amp; Customs </span>
     </div>
-		<a href="[URL OF PREVIOUS PAGE]" class="link-back">Back</a> 
-      <h1 class="heading-xlarge">
+    
+
+		<!--<h1 class="heading-xlarge">
         Binding Tariff Information Service
         <span class="heading-secondary"></span>
-      </h1>{{releaseVersion | log }}
+      </h1>{{releaseVersion | log }}-->
+		<h2 class="heading-medium">Hello John</h2>
+		<p>You last visited the BTI Service on 20 July 2018</p>
 		
-	
-		<div class="form-group">
-  <fieldset>
-
-    <legend>
-      <h1 class="heading-medium">
-        Are you applying on behalf of another business?
-      </h1>
-    </legend>
-
-    <div class="multiple-choice">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-      <label for="radio-inline-1">Yes</label>
-    </div>
-    <div class="multiple-choice">
-      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-      <label for="radio-inline-2">No</label>
-    </div>
-
-  </fieldset>
-</div>
-    <button class="button" type="submit">Save and continue</button>
+    
+		<h1 class="heading-large">What do you want to do?</h1>
+		<ul class="list">
+        
+        <li><a href="/prototype-v1/bti-eori" >Apply for a new binding tariff information decision</a></li>
+		<li><a href="#">Check the status of current applications</a></li>
+        <li><a href="#">View your previous rulings</a></li>
+        
+        
+    </ul>
+		<!--<a class="report-error__toggle js-visible" id="get-help-action" href="form-label">Get help with this page.</a>-->
 	  </div>
     </div>
-  
+   
 </main>
 
 {% endblock %}
-
-
